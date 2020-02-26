@@ -1,18 +1,16 @@
 function testFilesOnly(dir) {
-     return dir.filter((file) => {
-        if (typeof file === 'object' && file !== null) {
-            return testFilesOnly(file.subFiles).subFiles;
+     return dir.reduce((accumulator, file, index) => {
+
+        if (typeof file === 'object' && file !== Array) {
+           accumulator.push(...testFilesOnly(file.subFiles));
+
+        } else if (file.match(/.*\.test\.js/)) {
+            accumulator.push(file);
         };
 
-        if (file.match(/.*\.test\.js/)) {
-            return file;
-        };
-
-        return false;
-    });
+        return accumulator;
+    }, []);
 };
-
-
 
 module.exports = {
     testFilesOnly
