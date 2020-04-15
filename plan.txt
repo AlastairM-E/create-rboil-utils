@@ -1,3 +1,5 @@
 What to do to improve confidence in the application:
-- 
+- Check whether I need from of the util functiosn like outputDirContnetOf and readSubFielsFrom --> 
+  If copying a dir does all that stuff, don't repat the past.
+- test out the appendToFielsLiens, checking there is not a replacement mdouels.
         
