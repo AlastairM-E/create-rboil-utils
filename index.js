@@ -1,9 +1,11 @@
-const { readSubFilesFrom } = require('./cli-utils/readSubFilesFrom');
-const { testFilesOnly } = require('./cli-utils/testFilesOnly');
-const { outputDirContentOf } = require('./cli-utils/outputDirContentOf');
+const { readSubFilesFrom } = require('./build/readSubFilesFrom');
+const { testFilesOnly } = require('./build/testFilesOnly');
+const { outputDirContentOf } = require('./build/outputDirContentOf');
+const appendToFileLines = require('./build/appendToFileLines');
 
 module.exports = {
-    readSubFilesFrom,
-    testFilesOnly,
-    outputDirContentOf
+  readSubFilesFrom,
+  testFilesOnly,
+  outputDirContentOf,
+  appendToFileLines,
 };
