@@ -1,20 +1,3 @@
 What to do to improve confidence in the application:
-- Have the file crete certain files which match the test file name and ones which don't.
-    * Create files in the fixtures.
-        =* This will require fs.
-        =* LOop 5 times producing 2 test files and 3 okay files.
-           Files will need to be created by fake files via the following.
-            ^=* This will be done via faker producing a random file name, e.g x.js .
-            ^=* Then I will spilt the fake filename from to be ['x', '.', 'js'].
-            ^=* Then I will add in my test extention to the filename ['x', '.', 'test.', 'js'].
-            ^=* Then I will join the files together.
-           
-        
-        =* In the current loop create files via the fs.createFile();
-        =* also in the if index > 2, psuh them into results Array. 
-    * run the testFilesOnly on the fixture/testFilesOnly__Fixture folder.
-        =* use the outputDirContentOf function to get an array.
-        =* Then use the testFilesOnly Function to create an array.
-    * see if it returns the correct answer.
-        =* use expect to see if the testFIelsOnly matches the answers.
+- 
         
