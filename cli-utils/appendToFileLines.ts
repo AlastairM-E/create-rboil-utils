@@ -1,4 +1,4 @@
-export {};
+export { };
 
 const fs = require('fs');
 
@@ -24,7 +24,7 @@ const fs = require('fs');
 
 // write that new array joined to together by a new line to the file
 
-function appendToFileLines(
+function appendToFilesLines(
   fileDirectory: string,
   appendment: string,
   lineNumbers: number[],
@@ -72,11 +72,9 @@ function appendToFileLines(
   const { currentFilelines, toBeAdded } = newFilesContent;
   const indexJsFile = [...currentFilelines, ...toBeAdded].join('\n');
 
-  console.log(indexJsFile);
-
   fs.writeFileSync(fileDirectory, indexJsFile);
 
   return null;
 }
 
-module.exports = appendToFileLines;
+module.exports = { appendToFilesLines };
