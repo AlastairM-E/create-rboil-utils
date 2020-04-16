@@ -1,6 +1,6 @@
 {
   "name": "create-rboil-utils",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Utilites for the pack create-rboil",
   "main": "index.js",
   "license": "MIT",
